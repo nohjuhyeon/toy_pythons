@@ -15,5 +15,6 @@ for num_question_counts in [1,2,3,4]:
         num_answer = num_answer_counts + 1
         str_answer = list_answer[num_answer_counts]
         print("{}. {}".format(num_answer,str_answer), end = " ")
-    print("")
-    print("-----------------")
+    if num_question_counts != 3:
+        print("")
+        print("-----------------")
