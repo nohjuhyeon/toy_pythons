@@ -18,9 +18,3 @@ for num_question_count in range(len(list_question)):
     
 
 
-
-
-
-# for int str
-#
-# "1. {} 2. {} 3. {}".format(list_answer[0],list_answer[1], list_answer[2])
