@@ -18,7 +18,7 @@
 # 당신 응답 합계 : 40점
 # 학점은 A 입니다.
 # # 
-
+    
 question_list = ["1. 문제: Python에서 변수를 선언하는 방법은? (점수: 10점)",
                  "2. 문제: Python에서 리스트(List)의 특징은 무엇인가요? (점수: 15점)",
                  "3. 문제: Python에서 조건문을 작성하는 방법은? (점수: 10점)",
@@ -29,14 +29,14 @@ answer_list = ["1) var name, 2) name = value, 3) set name, 4) name == value",
                "1) if-else, 2) for-in, 3) while, 4) def",
                "1) class, 2) def, 3) import, 4) return"
 ]
-example_answer = [2,3,2,4]
-user_answer = [0,0,0,0]
-
+input_answer = [2,1,1,2]
+user_answer = []
+correct_answer = [2,1,1,2]
+score_list=[10,15,10,5]
 for a in range(len(question_list)):
     print(question_list[a])
     print(answer_list[a])
-    answer_index = example_answer[a]-1
-    pass
-    user_answer[answer_index] = user_answer[answer_index] + 1
+    print("- 정답: {}".format(input_answer[a]))
+    user_answer.append(input_answer[a])
     pass
 pass
