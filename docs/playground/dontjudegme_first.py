@@ -29,3 +29,14 @@ answer_list = ["1) var name, 2) name = value, 3) set name, 4) name == value",
                "1) if-else, 2) for-in, 3) while, 4) def",
                "1) class, 2) def, 3) import, 4) return"
 ]
+example_answer = [2,3,2,4]
+user_answer = [0,0,0,0]
+
+for a in range(len(question_list)):
+    print(question_list[a])
+    print(answer_list[a])
+    answer_index = example_answer[a]-1
+    pass
+    user_answer[answer_index] = user_answer[answer_index] + 1
+    pass
+pass
