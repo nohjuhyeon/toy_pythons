@@ -10,15 +10,15 @@ answer_list = ["1) var name, 2) name = value, 3) set name, 4) name == value",
                "1) if-else, 2) for-in, 3) while, 4) def",
                "1) class, 2) def, 3) import, 4) return"
 ]
-input_answer = [2,1,1,2]
+
 user_answer = []
 correct_answer = [2,1,1,2]
 score_list=[10,15,10,5]
 for a in range(len(question_list)):
     print(question_list[a])
     print(answer_list[a])
-    print("- 정답: {}".format(input_answer[a]))
-    user_answer.append(input_answer[a])
+    input_answer = int(input("- 정답:"))
+    user_answer.append(input_answer)
     pass
 pass
 
