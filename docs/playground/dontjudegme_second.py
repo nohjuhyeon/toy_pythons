@@ -6,13 +6,11 @@
 # 최종 점수 계산식
 
 
-user_anwer
-
-score=[]
-if user_answer[0] == correct_answer[0] :
-    score.append(int(score_list[]))
-elif user_answer[0] != correct_answer[0] : 
-    None
-        
+def result_cal() :
+    score=[]
+    if user_answer[0] == correct_answer[0] :
+        score.append(int(score_list[]))
+    elif user_answer[0] != correct_answer[0] : 
+        None
 
 
