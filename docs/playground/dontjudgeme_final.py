@@ -1,6 +1,5 @@
 # 요기에 주르륽 나열하기
 
-
 def question():    
     question_list = ["1. 문제: Python에서 변수를 선언하는 방법은? (점수: 10점)",
                     "2. 문제: Python에서 리스트(List)의 특징은 무엇인가요? (점수: 15점)",
@@ -24,9 +23,11 @@ def question():
     pass
     return user_answer
 
-question()
-
 def result_cal(user_answer) :
+    pass
+    correct_answer = [2,1,1,2]
+    score_list=[10,15,10,5]
+
     score=[]
     correct_answer = [2,1,1,2]
     score_list=[10,15,10,5]
@@ -46,4 +47,5 @@ def result_cal(user_answer) :
     print("학점은 {}입니다.".format(user_score))
  
 
-result_cal()
+result_cal(question())
+

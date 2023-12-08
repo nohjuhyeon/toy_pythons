@@ -18,6 +18,7 @@
 # 당신 응답 합계 : 40점
 # 학점은 A 입니다.
 # # 
+
 def question():    
     question_list = ["1. 문제: Python에서 변수를 선언하는 방법은? (점수: 10점)",
                     "2. 문제: Python에서 리스트(List)의 특징은 무엇인가요? (점수: 15점)",
@@ -31,8 +32,6 @@ def question():
     ]
 
     user_answer = []
-    correct_answer = [2,1,1,2]
-    score_list=[10,15,10,5]
     for a in range(len(question_list)):
         print(question_list[a])
         print(answer_list[a])
@@ -40,5 +39,4 @@ def question():
         user_answer.append(input_answer)
         pass
     pass
-
-question()
+    return user_answer
