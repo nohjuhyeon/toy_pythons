@@ -5,8 +5,10 @@
 # if문으로 비교해서 점수 넣기(function쓰기 가능)
 # 최종 점수 계산식
 
-
-def result_cal() :
+def result_cal(user_answer) :
+    pass
+    correct_answer = [2,1,1,2]
+    score_list=[10,15,10,5]
     score=[]
     for i in range(len(user_answer)):
        if user_answer[i] == correct_answer[i] :
@@ -24,5 +26,4 @@ def result_cal() :
     print("학점은 {}입니다.".format(user_score))
  
 
-result_cal()
-
+result_cal(question())
