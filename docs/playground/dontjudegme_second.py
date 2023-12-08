@@ -19,7 +19,10 @@ def result_cal() :
         user_score = "B"
     else:
         user_score = "C"
-    result = ("--------결과---------", "응답한 내용 : 1번 {}, 2번 {}, 3번 {}".format(user_answer(0:)), "당신 응답 합계 : {}점".format(user_sum), "학점은 {}입니다.".format(user_score), end="/n")
-    return result
+    print = "--------결과---------"
+    print = "응답한 내용 : 1번 {}, 2번 {}, 3번 {}".format(user_answer(0:))
+    print = "당신 응답 합계 : {}점".format(user_sum)
+    print = "학점은 {}입니다.".format(user_score)
 
 print(result_cal())
+
