@@ -23,4 +23,3 @@ for a in range(len(question_list)):
     question.question(question_list,answer_list)    #질문지 출력
     question.input(user_answer)                     #답지 입력 
 pass
-print(user_answer)
