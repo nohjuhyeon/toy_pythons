@@ -24,8 +24,8 @@ for a in range(len(question_list)):
     question.input(user_answer)                     #답지 입력 
 pass
 
-class Result_score :
-    def answer(self, user_answer) : 
+class Result_score : #클래스 생성
+    def answer(self, user_answer) : # function 1 : sum 도출
         correct_answer = [2,1,1,2]
         score_list=[10,15,10,5]
         score=[]
@@ -35,7 +35,7 @@ class Result_score :
                 user_sum = sum(score)
         return user_sum
 
-    def score(self, user_sum):
+    def score(self, user_sum): #function 2 : score 도출
         if user_sum >=30 :
             user_score = "A"
         elif user_sum >=20 :
@@ -44,12 +44,11 @@ class Result_score :
             user_score = "C"
         return user_score
     
-result_score = Result_score()
-
-user_sum = result_score.answer(user_answer)
+result_score = Result_score() # 클래스 불러내기
+user_sum = result_score.answer(user_answer) #user_sum 변수 재정의
 
 print("--------결과---------")
 print("응답한 내용 : 1번 {}, 2번 {}, 3번 {}, 4번 {}".format(user_answer[0], user_answer[1],user_answer[2], user_answer[3]))
-print("합계 : {}점".format(result_score.answer(user_answer)))
+print("합게 : {}점".format(result_score.answer(user_answer)))
 print("학점은 {}입니다.".format(result_score.score(user_sum)))
 
