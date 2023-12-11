@@ -49,6 +49,6 @@ user_sum = result_score.answer(user_answer) #user_sum 변수 재정의
 
 print("--------결과---------")
 print("응답한 내용 : 1번 {}, 2번 {}, 3번 {}, 4번 {}".format(user_answer[0], user_answer[1],user_answer[2], user_answer[3]))
-print("합게 : {}점".format(result_score.answer(user_answer)))
+print("합계 : {}점".format(result_score.answer(user_answer)))
 print("학점은 {}입니다.".format(result_score.score(user_sum)))
 
